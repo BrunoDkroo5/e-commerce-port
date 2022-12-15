@@ -7,10 +7,14 @@
 
 :root {
   --color-primary: #F26A23;
+  --color-gradient-1: #FF6B00;
+  --color-gradient-2:#FFA740;
+  --color-secundary: #7D4E1B;
+  --color-terciary: #343434;
 }
 
 div {
   width: 500px;
   height: 500px;
-  background-color: var(--color-primary);
+  background: linear-gradient(90.07deg, var(--color-gradient-1) 2.12%, var(--color-gradient-2) 99.94%);
 }/*# sourceMappingURL=style.css.map */
