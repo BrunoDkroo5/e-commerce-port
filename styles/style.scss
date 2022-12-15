@@ -1,20 +1,347 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    font-family: 'Inter';
+  font-family: "Inter";
 }
-:root{
-    --color-primary: #F26A23;
-    --color-gradient-1: #FF6B00;
-    --color-gradient-2:#FFA740;
-    --color-secundary: #7D4E1B;
-    --color-terciary: #343434;
+:root {
+  --color-primary: #f26a23;
+  --color-gradient-1: #ff6b00;
+  --color-gradient-2: #ffa740;
+  --color-secundary: #7d4e1b;
+  --color-terciary: #343434;
 }
-.centralization{
-    
+.centralization {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
 }
-.gradiente{
-    background: linear-gradient(90.07deg, var(--color-gradient-1) 2.12%, var(--color-gradient-2) 99.94%);
+.background-top {
+  width: 100%;
+  height: 844px;
+
+  background-image: url("../images/images-random/background-top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container-top {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu {
+  display: block;
+  width: 800px;
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style-type: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        a {
+          margin: 5px;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.menu-curto {
+  display: none;
+  width: 500px;
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      list-style-type: none;
+
+      li {
+        display: flex;
+        align-items: center;
+        a {
+          margin: 5px;
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+.menu-mobile {
+  display: none;
+  hr {
+    width: 20px;
+    height: 5px;
+    border: 0;
+    background-color: white;
+    margin: 2px;
+  }
+}
+.btn-nember {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  button {
+    width: 101px;
+    height: 35px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(90.07deg, #ff6b00 2.12%, #ffa740 99.94%);
+
+    cursor: pointer;
+  }
+  p {
+    color: white;
+  }
+}
+.container-callToAction-top {
+  
+  display: flex;
+  justify-content: space-between;
+}
+.text-top {
+    margin-top: 220px;
+  p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: white;
+  }
+  h3 {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: white;
+  }
+  span {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+  }
+  button {
+    width: 101px;
+    height: 35px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(90.07deg, #ff6b00 2.12%, #ffa740 99.94%);
+
+    cursor: pointer;
+  }
+}
+.container-text {
+  display: flex;
+  align-items: center;
+  h1 {
+    padding-left: 10px;
+    font-size: 40px;
+    line-height: 48px;
+    color: white;
+  }
+}
+
+.line-top {
+  height: 140px;
+  width: 5px;
+  background: linear-gradient(90.07deg, #ff6b00 2.12%, #ffa740 99.94%);
+}
+
+.card-user {
+    width: 535px;
+    height: 643px;
+    margin-top: 50px;
+  font-family: "Roboto";
+  align-items: flex-start;
+  background-color: white;
+
+  border-radius: 10px;
+  box-shadow: 50px 165px 165px rgba(18, 31, 62, 0.2);
+
+  padding: 25px;
+  h1 {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    img{
+        position: relative;
+        right: -120px;
+    }
+  }
+  p {
+    margin-top: 19px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7c869a;
+  }
+  span {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #7c869a;
+    p{
+        margin: 0;
+    }
+    hr {
+      width: 100px;
+      background-color: #ecf0f5;
+      height: 2px;
+      border: 0;
+    }
+  }
+  button {
+    width: 468px;
+    height: 56px;
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    background: linear-gradient(90.07deg, #ff6b00 2.12%, #ffa740 99.94%);
+
+    cursor: pointer;
+  }
+  button:nth-last-child(1) {
+    background: #ffefe6;
+    color: var(--color-primary);
+  }
+}
+
+.boxs-users {
+    margin-top: 16px;
+  h3 {
+    font-size: 16px;
+  }
+
+  input {
+    margin: 14px 0 14px 0;
+    padding-left: 40px;
+    width: 465px;
+    height: 56px;
+    border: 1px solid #ecf0f5;
+    border-radius: 6px;
+    background-color: white;
+    background-image: url("../images/icons/user.svg");
+    background-repeat: no-repeat;
+    background-position-y: 18px;
+    background-position-x: 15px;
+  }
+}
+input:nth-child(4) {
+  background-position-y: 16px;
+  background-position-x: 10px;
+  background-image: url("../images/icons/email.svg");
+}
+input:nth-child(6) {
+  background-position-y: 16px;
+  background-position-x: 10px;
+  background-image: url("../images/icons/celular.svg");
+}
+
+@media screen and (max-width: 1440px) {
+  .container-top {
+    padding: 20px;
+  }
+  .container-callToAction-top{
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 1400px){
+.container-callToAction-top{
+    flex-direction: column;
+    align-items: center;
+}
+.text-top{
+    margin-top: 20px;
+}
+.background-top{
+    height: auto;
+}
+}
+@media screen and (max-width: 1300px) {
+  .menu {
+    display: none;
+  }
+  .menu-curto {
+    display: block;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .menu-mobile {
+    display: block;
+  }
+  .menu-curto {
+    display: none;
+  }
+}
+@media screen and (max-width: 692px){
+.container-text{
+    h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+.text-top{
+    margin-top: 0;
+    p{
+        font-size: 12px;
+    }
+}
+.line-top{
+    height: 100px;
+}
+}
+@media screen and (max-width: 600px){
+    .card-user{
+        width: 350px;
+        button{
+            width: 300px;
+        }
+        h1{
+            img{
+                right: -180px;
+                top: -40px;
+            }
+        }
+    }
+    .boxs-users{
+        input{
+            width: 300px;
+        }
+    }
+}
+@media screen and (max-width: 540px) {
+  .btn-nember {
+    button {
+      margin: 0;
+    }
+    img {
+      display: none;
+    }
+    p {
+      display: none;
+    }
+  }
 }
