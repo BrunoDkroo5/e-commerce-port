@@ -548,6 +548,7 @@ input:nth-child(6) {
     display: flex;
     gap: 15px;
     p {
+      margin-top: 0;
       font-weight: 400;
       font-size: 10px;
       line-height: 12px;
@@ -644,15 +645,13 @@ input:nth-child(6) {
     background-color: #ff8257;
   }
 }
-.cards-process{
+.cards-process {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 40px
-  ;
+  margin-top: 40px;
 }
 .card-pr {
-  
   width: 293px;
   height: 496px;
   border-radius: 15px;
@@ -673,6 +672,64 @@ input:nth-child(6) {
     line-height: 18px;
 
     color: #7c7c7c;
+  }
+}
+.footer-background {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-terciary);
+}
+.footer{
+  hr{
+    margin-top: 35px;
+  }
+}
+.join{
+  padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.join-info {
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #ffffff;
+  }
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #ffffff;
+  }
+}
+.join-adress {
+  input {
+    width: 620px;
+    height: 58px;
+    background-color: white;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    padding: 15px;
+  }
+  button {
+    width: 141px;
+    height: 45px;
+    background: linear-gradient(90.07deg, #ff6b00 2.12%, #ffa740 99.94%);
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    cursor: pointer;
+    position: absolute;
+
   }
 }
 
