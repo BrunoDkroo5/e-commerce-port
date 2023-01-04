@@ -679,15 +679,42 @@ input:nth-child(6) {
   height: auto;
   background-color: var(--color-terciary);
 }
-.footer{
-  hr{
+.footer {
+  hr {
     margin-top: 35px;
+    border: 1px solid #5f5f5f;
   }
 }
-.join{
+.join {
   padding-top: 80px;
   display: flex;
   justify-content: space-between;
+  span {
+    display: none;
+    input {
+      width: 620px;
+      height: 58px;
+      background-color: white;
+      border: 0;
+      border-radius: 8px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      padding: 15px;
+    }
+    button {
+      width: 141px;
+      height: 45px;
+      background: linear-gradient(90.07deg, #ff6b00 2.12%, #ffa740 99.94%);
+      border-radius: 5px;
+      border: 0;
+      color: white;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      cursor: pointer;
+    }
+  }
 }
 .join-info {
   h1 {
@@ -706,6 +733,8 @@ input:nth-child(6) {
   }
 }
 .join-adress {
+  display: flex;
+  align-items: center;
   input {
     width: 620px;
     height: 58px;
@@ -728,7 +757,109 @@ input:nth-child(6) {
     font-size: 12px;
     line-height: 15px;
     cursor: pointer;
-    position: absolute;
+    position: relative;
+    left: 610px;
+  }
+}
+.about-us {
+  display: flex;
+  justify-content: space-between;
+}
+.about {
+  h1 {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #ffffff;
+  }
+  p {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #ffffff;
+  }
+}
+.our-services {
+  display: flex;
+  gap: 50px;
+  margin-top: 35px;
+  ul {
+    li {
+      display: flex;
+      list-style-type: none;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 34px;
+
+      color: #ffffff;
+      span {
+        color: transparent;
+      }
+      h1 {
+        margin-bottom: 16px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+.contact-info {
+  h1 {
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+  p {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 34px;
+
+    color: #ffffff;
+  }
+  ul {
+    li {
+      list-style-type: none;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 34px;
+
+      color: #ffffff;
+    }
+  }
+}
+.copy {
+  display: flex;
+  justify-content: space-between;
+  img{
+    position:absolute;
+    bottom: -4220px;
+    right: 185px;
+  }
+  h4 {
+    margin-top: 29px;
+    margin-bottom: 29px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #ffffff;
+  }
+  h3 {
+    margin-top: 29px;
+    margin-bottom: 29px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #ffffff;
   }
 }
 
@@ -737,6 +868,9 @@ input:nth-child(6) {
     padding: 20px;
   }
   .container-callToAction-top {
+    padding: 20px;
+  }
+  .footer {
     padding: 20px;
   }
 }
@@ -808,6 +942,25 @@ input:nth-child(6) {
   .whatt-aour {
     padding: 20px;
   }
+  .join {
+    text-align: center;
+    flex-direction: column;
+    span {
+      display: block;
+      flex-direction: row;
+    }
+  }
+  .join-adress {
+    display: none;
+  }
+  .about-us{
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+  }
+  .our-services{
+   
+  }
 }
 @media screen and (max-width: 1000px) {
   .menu-mobile {
@@ -819,6 +972,18 @@ input:nth-child(6) {
 }
 .cards-articles {
   width: 650px;
+}
+@media screen and (max-width: 806px) {
+  .join {
+    span {
+      input {
+        margin-top: 15px;
+      }
+      button {
+        margin-top: 15px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 692px) {
   .container-text {
@@ -843,6 +1008,13 @@ input:nth-child(6) {
 @media screen and (max-width: 650px) {
   .cards-articles {
     width: 330px;
+  }
+  .join {
+    span {
+      input {
+        width: 450px;
+      }
+    }
   }
 }
 @media screen and (max-width: 600px) {
@@ -891,5 +1063,14 @@ input:nth-child(6) {
   .image-aour {
     width: 300px;
     height: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .join {
+    span {
+      input {
+        width: 330px;
+      }
+    }
   }
 }
