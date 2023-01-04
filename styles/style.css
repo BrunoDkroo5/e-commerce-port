@@ -713,10 +713,6 @@ input:nth-child(6) {
   color: #ffffff;
 }
 
-.join-adress {
-  display: flex;
-  align-items: center;
-}
 .join-adress input {
   width: 620px;
   height: 58px;
@@ -739,8 +735,7 @@ input:nth-child(6) {
   font-size: 12px;
   line-height: 15px;
   cursor: pointer;
-  position: relative;
-  left: 610px;
+  position: absolute;
 }
 
 @media screen and (max-width: 1440px) {
@@ -748,9 +743,6 @@ input:nth-child(6) {
     padding: 20px;
   }
   .container-callToAction-top {
-    padding: 20px;
-  }
-  .footer {
     padding: 20px;
   }
 }
